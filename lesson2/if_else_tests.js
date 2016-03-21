@@ -22,9 +22,10 @@ describe("if/else/switch tasks", function() {
   describe("helloWorld", function() {
     describe("Возвращает результат", function() {
       expectedResults = {
-        en: 'Hello',
-        es: 'Hola',
-        default: 'Привет'
+        en: 'Hello, World',
+        de: 'Hella, Welt',
+        es: 'Hola, mundo',
+        default: 'Привет, Мир'
       }
 
       for (var lang in expectedResults) {
