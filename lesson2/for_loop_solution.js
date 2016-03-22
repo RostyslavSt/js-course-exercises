@@ -39,27 +39,8 @@ function checkAssignGrade() {
 		}
 	}
 
-	// for (i = 61; i <= 90; i++) {
-	// 	if (assignGrade(i) === 4) {
-	// 		console.log('Для i=' + i + ' оценка ' + 4 + ';');
-	// 		console.log('Для i=80 оценка 4');
-			
-	// 	}
-	// } 
-
-
-	for (var i = 81; i <= 100; i++) {
-		if (assignGrade(i) === 5) {
-         console.log('Для i=' + i + ' оценка ' + '5');
-         }
+	for (var i = 80; i <= 100; i++) {
+		 console.log('Для i=' + i + ' оценка ' + assignGrade(i));
     }
-
-
-	// for (i = 91; i <= 100; i++) {
-	// 	if (assignGrade(i) === 5) {
-	// 		console.log('Для i=' + i + ' оценка ' + 5 + ';');
-	// 	}
-	// } 
-
 }
 // function checkAssignGrade()
