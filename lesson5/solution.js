@@ -39,4 +39,42 @@ function getGeometricObject(opts) {
 }
 
 function Animal(name, type) {
+	this.name = name;
+	this.type = type;
+	this.stepCount = 0;
 }
+
+Animal.prototype.makeNoise = function() {
+	switch (this.type) {
+		case 'cat': 
+			return 'meow';
+			break;
+		case 'dog': 
+			return 'woof';
+			break;
+		case 'rat': 
+			return 'squeak';
+			break;
+	}
+	// if (this.type === 'cat') {return 'meow';}
+	// if (this.type === 'dog') {return 'woof';}
+	// if (this.type === 'rat') {return 'squeak';}
+}
+
+tom = new Animal('Voldemort', 'cat');
+console.log(tom);
+console.log('Type of Tom: ' + tom.type);
+console.log('Tom stepcount: ' + tom.stepCount);
+tom.makeNoise();
+
+sharik = new Animal('Nevil', 'dog');
+console.log(sharik);
+console.log('Type of Sharik: ' + sharik.type);
+console.log('Sharik stepcount: ' + sharik.stepCount);
+sharik.makeNoise();
+
+grey = new Animal('Scabbers', 'rat');
+console.log(grey);
+console.log('Type of Grey: ' + grey.type);
+console.log('Grey stepcount: ' + grey.stepCount);
+grey.makeNoise();
